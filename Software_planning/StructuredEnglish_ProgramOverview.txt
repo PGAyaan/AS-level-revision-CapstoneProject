@@ -1,0 +1,37 @@
+// Structured English for the question & scoring system
+
+1. Prompt the user to enter their name.
+2. Create a text file for the user if it doesn't exist, or open it if it does.
+3. Read the user's previous score from the file.
+4. Ask the user how many questions they want to answer.
+5. Initialise a variable to store the user's current score to 0.
+6. Loop over the number of questions the user wants to answer:
+    a. Display the question.
+    b. Get the user's answer.
+    c. Check if the answer is correct:
+        - If correct, increment the user's current score.
+        - If incorrect, display the correct answer.
+7. Display the user's final score.
+8. Append the user's current score to their file.
+9. Close the file.
+10. Provide options to the user:
+    a. View scores
+    b. Reset score
+    c. Answer more questions
+    d. Exit
+
+View scores:
+1. Prompt the user for the name of the user whose scores they want to view.
+2. Open the corresponding file and display the scores.
+3. Close the file.
+
+Reset score:
+1. Prompt the user for the name of the user whose score they want to reset.
+2. Open the corresponding file and set the score to 0.
+3. Close the file.
+
+Answer more questions:
+1. Repeat the process from step 4 onwards.
+
+Exit:
+1. Terminate the program.
