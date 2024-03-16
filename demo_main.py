@@ -6,6 +6,7 @@ def main():
     current_score = 0
 
     for i in range(1, number_of_questions + 1):
+        print()
         question = get_question(i)
         correct_answer = get_correct_answer(i)
         user_answer = prompt_user_for_answer(question)
@@ -14,24 +15,31 @@ def main():
             current_score += 1
         else:
             display_correct_answer(correct_answer)
+        print()
 
     display_final_score(current_score)
     append_score_to_file(score_file, current_score)
     close_file(score_file)
 
     option = prompt_user_for_option()
+    if option == "4":
+        print("Exiting now, thank you for playing.")
+        exit()
+    else:
+        while option != "4":
+            if option == "1":
+                user_name = prompt_user_for_user_to_view()
+                display_user_scores(user_name)
+            elif option == "2":
+                user_name = prompt_user_for_user_to_reset()
+                reset_user_score(user_name)
+            elif option == "3":
+                main()
+            else:
+                while option != ("1" and "2" and "3"):
+                    print("Please enter a valid directory number from the menu.")
 
-    while option != "4":
-        if option == "1":
-            user_name = prompt_user_for_user_to_view()
-            display_user_scores(user_name)
-        elif option == "2":
-            user_name = prompt_user_for_user_to_reset()
-            reset_user_score(user_name)
-        elif option == "3":
-            main()
-
-        option = prompt_user_for_option()
+            option = prompt_user_for_option()
 
 def prompt_user_for_name():
     return input("Enter your name: ")
@@ -71,7 +79,7 @@ def prompt_user_for_answer(question):
     return input("Enter your answer: ")
 
 def display_correct_answer(correct_answer):
-    print(f"Wrong. The correct answer is {correct_answer}")
+    print(f"Wrong. The correct answer is: {correct_answer}")
 
 def display_final_score(score):
     print(f"Your final score is: {score}")
