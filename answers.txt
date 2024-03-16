@@ -1,1 +1,30 @@
-
+1. Abstraction in programming refers to the process of hiding unnecessary details and representing only essential features of an object or system.
+2. Decomposition in computer science involves breaking down a complex problem into smaller, more manageable parts or modules.
+3. Stepwise refinement is a problem-solving technique where a complex problem is broken down into a series of simpler steps, each of which can be further refined until a solution is achieved.
+4. Structured English is a method of writing algorithms using natural language combined with specific control structures such as loops and conditionals.
+5. Flowcharts are graphical representations of algorithms or processes, consisting of symbols representing different operations and arrows indicating the flow of control.
+6. Pseudocode is a high-level description of a computer program or algorithm, written in plain language with some programming language constructs.
+7. In programming, a sequence refers to an ordered collection of elements or instructions that are executed in a specific order.
+8. Identifiers are names given to program elements such as variables, functions, or constants, which are used to refer to these elements in the code.
+9. Iteration is the repetition of a process or set of instructions in a computer program, typically using loops, to achieve a desired result.
+10. Data types in programming define the type of data that a variable can hold and the operations that can be performed on it.
+11. Program development involves several stages including problem analysis, algorithm design, coding, testing, and maintenance.
+12. Abstraction is important in software engineering as it helps manage complexity, facilitates code reuse, and enhances maintainability.
+13. Decomposition allows problems to be divided into manageable parts, making them easier to understand, develop, and maintain.
+14. Stepwise refinement helps programmers focus on one aspect of a problem at a time, leading to clearer and more structured solutions.
+15. Structured English uses standard language constructs such as IF-THEN-ELSE statements and WHILE loops to describe algorithms in a structured manner.
+16. Flowcharts are particularly useful for visualizing the flow of control in an algorithm, identifying decision points, and understanding complex processes.
+17. Pseudocode can aid in algorithm development by providing a high-level, language-independent representation of the algorithm's logic.
+18. Sequences determine the order in which instructions are executed in a program, ensuring that operations are performed in a specified sequence.
+19. Meaningful identifiers improve code readability and maintainability, making it easier for developers to understand and work with the code.
+20. Iterative constructs such as loops allow programmers to execute a block of code repeatedly, based on a condition or a set number of iterations.
+21. Primitive data types represent basic data elements such as integers, floating-point numbers, characters, and booleans, while composite data types combine multiple elements into a single unit.
+22. Program development typically begins with problem analysis, where the requirements are gathered and analyzed to identify the problem to be solved.
+23. Abstraction layers in software architecture provide a hierarchical structure for organizing system components, with each layer representing a different level of abstraction.
+24. Decomposition promotes modular programming by dividing a program into smaller, self-contained modules that can be developed and tested independently.
+25. Stepwise refinement involves gradually breaking down a problem into smaller, more manageable steps, refining each step until a complete solution is obtained.
+26. Structured English employs natural language constructs along with control structures such as conditionals and loops to describe algorithms in a structured manner.
+27. Flowchart symbols include shapes such as rectangles for process steps, diamonds for decision points, and arrows for the flow of control between steps.
+28. Pseudocode constructs include sequential execution, conditionals (IF-THEN-ELSE), loops (WHILE, FOR), and variable assignments, among others.
+29. Sequences determine the order of execution of instructions in a program, ensuring that operations are performed in a logical and predictable manner.
+30. Identifiers in programming languages have certain characteristics such as being case-sensitive, starting with a letter or underscore, and not containing spaces or special characters.
