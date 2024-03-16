@@ -1,0 +1,146 @@
+FUNCTION main():
+    name = name_prompt()
+    score_file = user_file_management(name)
+    previous_score = read_previous_score(score_file)
+    number_of_questions = num_questions()
+    current_score = 0
+
+    FOR i ← 1 TO number_of_questions:
+        question = get_question(i)
+        correct_answer = get_correct_answer(i)
+        user_answer = user_answer(question)
+        
+        IF user_answer == correct_answer THEN
+            current_score = current_score + 1
+        ELSE
+            display_correct_answer(correct_answer)
+        END IF
+
+    display_final_score(current_score)
+    append_score_to_file(score_file, current_score)
+    close_file(score_file)
+
+    option = prompt_user_for_option()
+
+    WHILE option != "Exit":
+        IF option == "View scores" THEN
+            user_name = prompt_user_for_user_to_view()
+            display_user_scores(user_name)
+        ELSE IF option == "Reset score" THEN
+            user_name = prompt_user_for_user_to_reset()
+            reset_user_score(user_name)
+        ELSE IF option == "Answer more questions" THEN
+            main()
+        END IF
+
+        option = prompt_user_for_option()
+
+    END WHILE
+
+END FUNCTION
+
+FUNCTION name_prompt():
+    OUTPUT "Enter your name: "
+    RETURN user_input
+
+END FUNCTION
+
+FUNCTION user_file_management(name):
+    TRY:
+        file = OPEN(name + ".txt", "r+")
+    EXCEPT FileNotFoundError:
+        file = OPEN(name + ".txt", "w+")
+
+    RETURN file
+
+END FUNCTION
+
+FUNCTION read_previous_score(file):
+    previous_score = 0
+  IF
+        previous_score = int(file.readline())
+    EXCEPT ValueError:
+        pass
+
+    RETURN previous_score
+
+END FUNCTION
+
+FUNCTION num_questions():
+    OUTPUT "How many questions do you want to answer? "
+    RETURN user_input
+
+END FUNCTION
+
+FUNCTION get_question(index):
+    question = // read question from file based on index
+    RETURN question
+
+END FUNCTION
+
+FUNCTION get_correct_answer(index):
+    correct_answer = // read correct answer from file based on index
+    RETURN correct_answer
+
+END FUNCTION
+
+FUNCTION user_answer(question):
+    OUTPUT question
+    OUTPUT "Enter your answer: "
+    RETURN user_input
+
+END FUNCTION
+
+FUNCTION display_correct_answer(correct_answer):
+    OUTPUT "Wrong. The correct answer is " + correct_answer
+
+END FUNCTION
+
+FUNCTION display_final_score(score):
+    OUTPUT "Your final score is: " + score
+
+END FUNCTION
+
+FUNCTION append_score_to_file(file, score):
+    file.write(str(score) + "\n")
+
+END FUNCTION
+
+FUNCTION close_file(file):
+    CLOSE FILE
+
+END FUNCTION
+
+FUNCTION prompt_user_for_option():
+    OUTPUT "Choose an option: "
+    OUTPUT "1. View scores"
+    OUTPUT  "2. Reset score"
+    OUTPUT "3. Answer more questions"
+    OUTPUT  "4. Exit"
+    RETURN user_input
+
+END FUNCTION
+
+FUNCTION prompt_user_for_user_to_view():
+    OUTPUT "Enter the name of the user: "
+    RETURN user_input
+
+END FUNCTION
+
+FUNCTION display_user_scores(user_name):
+    OUTPUT // display scores for the user with user_name
+
+END FUNCTION
+
+FUNCTION prompt_user_for_user_to_reset():
+    OUTPUT "Enter the name of the user: "
+    RETURN user_input
+
+END FUNCTION
+
+FUNCTION reset_user_score(user_name):
+    // set the score for the user with user_name to 0
+
+END FUNCTION
+
+main() // Start the program
