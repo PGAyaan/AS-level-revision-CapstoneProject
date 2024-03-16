@@ -1,1 +1,30 @@
-
+1. What is Abstraction in programming?
+2. Define decomposition in the context of computer science.
+3. Explain stepwise refinement and its importance in programming.
+4. What is Structured English and how is it used in program development?
+5. How are flowcharts used in the design and representation of algorithms?
+6. Describe the purpose and structure of pseudocode.
+7. What is meant by a sequence in programming?
+8. What are identifiers and why are they important in programming?
+9. How does iteration contribute to the flow of a program?
+10. Describe different data types commonly used in programming.
+11. How does the process of program development typically unfold?
+12. Why is Abstraction important in software engineering?
+13. What are the advantages of using decomposition in problem-solving?
+14. How does stepwise refinement help in breaking down complex problems?
+15. Explain the syntax and semantics of Structured English.
+16. In what scenarios are flowcharts particularly useful?
+17. How can pseudocode aid in the development of algorithms?
+18. What role do sequences play in the execution of a program?
+19. Why is it crucial to choose meaningful identifiers in programming?
+20. Give examples of iterative constructs used in programming languages.
+21. Differentiate between primitive and composite data types.
+22. How does the process of program development involve problem analysis?
+23. Discuss the concept of abstraction layers in software architecture.
+24. Explain how decomposition contributes to modular programming.
+25. Outline the steps involved in stepwise refinement.
+26. How can Structured English be used to represent control structures?
+27. What symbols are commonly used in flowchart diagrams?
+28. Provide examples of pseudocode constructs for algorithmic operations.
+29. How do sequences affect the flow of control in a program?
+30. Describe the characteristics of identifiers in programming languages.
